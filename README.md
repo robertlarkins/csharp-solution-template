@@ -10,6 +10,7 @@ Enforces consistent coding styles for the solution, and takes precedence over th
 
 ## .gitignore
 Specifies which files should be untracked by Git version control.
+The .gitignore provided has been generated using https://www.toptal.com/developers/gitignore specifying *VisualStudio*.
 
 ## Directory.Build.props
 Base settings that are automatically applied to all projects in the solution.
@@ -70,3 +71,8 @@ StyleCop configuration file. These configurations allow the behaviour of certain
 __Further Reading__:
  - [Documentation](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/Configuration.md#getting-started-with-stylecopjson)
 
+## NuGet.Config
+NuGet behaviour is controlled by settings in this configuration file.
+
+__Further Reading__:
+ - https://docs.microsoft.com/en-us/nuget/reference/nuget-config-file
