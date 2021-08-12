@@ -21,6 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{C2DCD2
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{A313B7C6-B528-416C-A4B0-6768E2ADA0A0}"
+	ProjectSection(SolutionItems) = preProject
+		src\infrastructure\README.md = src\infrastructure\README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{C1954756-EADD-4F76-8682-24B6CDB123C1}"
 EndProject
@@ -48,12 +51,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "persistence", "persistence", "{DDF1A73C-6673-400B-A15D-722B4796BC11}"
+	ProjectSection(SolutionItems) = preProject
+		src\persistence\README.md = src\persistence\README.md
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Product.Common", "src\common\Company.Product.Common\Company.Product.Common.csproj", "{F611F926-AACC-4BFF-A428-AF7C6370D8D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Product.Application", "src\application\Company.Product.Application\Company.Product.Application.csproj", "{ADB41562-3C45-492A-B53E-7FA5406E53D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company.Product.Domain", "src\domain\Company.Product.Domain\Company.Product.Domain.csproj", "{C320CEDE-7C68-4281-9428-B32914FCF4B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Product.Domain", "src\domain\Company.Product.Domain\Company.Product.Domain.csproj", "{C320CEDE-7C68-4281-9428-B32914FCF4B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
