@@ -33,11 +33,11 @@ Write-Host "`n----------"
 Write-Host "Replacing '$CurrentName' within files with '$NewName'"
 Write-Host "These are the files with replaced values:"
 
-$Files = Get-ChildItem -File -Recurse -Exclude RenameSolution.ps1
+$Files = Get-ChildItem -File -Recurse -Exclude RenameSolution.ps1 | Select-String $NewName -List | Select Path
 
 ForEach ($File in $Files)
 {
     Write-Host $File
-    (Get-Content $File -Raw) -replace $CurrentName, $NewName |
-        Set-Content -NoNewLine $File
+    (Get-Content -Path $File -Raw) -replace $CurrentName, $NewName |
+        Set-Content -NoNewLine -Path $File
 }
