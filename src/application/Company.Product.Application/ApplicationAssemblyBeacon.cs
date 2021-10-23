@@ -1,7 +1,7 @@
 ﻿namespace Company.Product.Application
 {
     /// <summary>
-    /// A class to allow Startup.cs to find this assembly.
+    /// Class to allow the Application Assembly to be retrieved. Used in Startup.cs to find this assembly.
     /// </summary>
     public class ApplicationAssemblyBeacon
     {
