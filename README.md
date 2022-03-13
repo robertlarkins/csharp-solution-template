@@ -12,14 +12,13 @@ Enforces consistent coding styles for the solution, and takes precedence over th
 Specifies which files should be untracked by Git version control.
 The .gitignore provided has been generated using https://www.toptal.com/developers/gitignore specifying *VisualStudio*.
 
+
 ## Directory.Build.props
+
 Base settings that are automatically applied to all projects in the solution.
 
 Recommended settings include:
 ```xml
-<!-- The default framework targeted for this solution. -->
-<TargetFramework>net5.0</TargetFramework>
-
 <!-- Turns on Nullable Reference Types, available from C#8. -->
 <Nullable>enable</Nullable>
 
@@ -37,6 +36,9 @@ Other possible options:
 ```xml
 <!-- The version of the C# language to use. -->
 <LangVersion>9.0</LangVersion>
+
+<!-- The default framework targeted for this solution. Though best to leave this in the .csproj. -->
+<TargetFramework>net5.0</TargetFramework>
 ```
 
 __Variables__:
