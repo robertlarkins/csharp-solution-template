@@ -8,4 +8,7 @@
     <PackageReference Include="CSharpFunctionalExtensions" Version="2.22.0" />
     <PackageReference Include="NodaTime" Version="3.0.7" />
   </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
 </Project>

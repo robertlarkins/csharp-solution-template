@@ -47,7 +47,7 @@ __Variables__:
 
 __Further Reading__:
  - [Build Customisation](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build)
- - [Framework Targetting](https://docs.microsoft.com/en-us/dotnet/standard/frameworks)
+ - [Framework Targeting](https://docs.microsoft.com/en-us/dotnet/standard/frameworks)
  - [Nullable Contexts](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references#nullable-contexts)
  - [Compiler Options](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options)
  - [Language Versioning](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version)
