@@ -7,6 +7,9 @@
     <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Mortgages\Queries\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\domain\Company.Product.Domain\Company.Product.Domain.csproj" />
   </ItemGroup>
 </Project>
