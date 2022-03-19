@@ -1,32 +1,31 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Company.Product.Api
+namespace Company.Product.Api;
+
+/// <summary>
+/// Api starting point.
+/// </summary>
+public class Program
 {
     /// <summary>
-    /// Api starting point.
+    /// Defines the entry point of the application.
     /// </summary>
-    public class Program
+    /// <param name="args">The arguments.</param>
+    public static void Main(string[] args)
     {
-        /// <summary>
-        /// Defines the entry point of the application.
-        /// </summary>
-        /// <param name="args">The arguments.</param>
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
-
-        /// <summary>
-        /// Creates the host builder.
-        /// </summary>
-        /// <param name="args">The arguments.</param>
-        /// <returns>The host builder.</returns>
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        CreateHostBuilder(args).Build().Run();
     }
+
+    /// <summary>
+    /// Creates the host builder.
+    /// </summary>
+    /// <param name="args">The arguments.</param>
+    /// <returns>The host builder.</returns>
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
 }

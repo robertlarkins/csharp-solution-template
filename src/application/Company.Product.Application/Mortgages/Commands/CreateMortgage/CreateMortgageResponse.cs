@@ -1,13 +1,12 @@
-﻿namespace Company.Product.Application.Mortgages.Commands.CreateMortgage
+﻿namespace Company.Product.Application.Mortgages.Commands.CreateMortgage;
+
+/// <summary>
+/// The response from creating the mortgage.
+/// </summary>
+public class CreateMortgageResponse
 {
     /// <summary>
-    /// The response from creating the mortgage.
+    /// Gets or sets the identifier.
     /// </summary>
-    public class CreateMortgageResponse
-    {
-        /// <summary>
-        /// Gets or sets the identifier.
-        /// </summary>
-        public int Id { get; set; }
-    }
+    public int Id { get; set; }
 }

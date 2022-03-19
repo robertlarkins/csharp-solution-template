@@ -1,5 +1,4 @@
 ﻿using Company.Product.Domain.Enumerations;
-using CSharpFunctionalExtensions;
 
 namespace Company.Product.Domain.Entities;
 

@@ -1,28 +1,26 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using MediatR;
 
-namespace Company.Product.Application.Properties.Queries.GetProperty
+namespace Company.Product.Application.Properties.Queries.GetProperty;
+
+/// <summary>
+/// Handler for getting a property.
+/// </summary>
+public class GetPropertyQueryHandler : IRequestHandler<GetPropertyQuery, GetPropertyResponse>
 {
     /// <summary>
-    /// Handler for getting a property.
+    /// Handles the specified request.
     /// </summary>
-    public class GetPropertyQueryHandler : IRequestHandler<GetPropertyQuery, GetPropertyResponse>
+    /// <param name="request">The request.</param>
+    /// <param name="cancellationToken">The cancellation token.</param>
+    /// <returns>Blah.</returns>
+    public Task<GetPropertyResponse> Handle(GetPropertyQuery request, CancellationToken cancellationToken)
     {
-        /// <summary>
-        /// Handles the specified request.
-        /// </summary>
-        /// <param name="request">The request.</param>
-        /// <param name="cancellationToken">The cancellation token.</param>
-        /// <returns>Blah.</returns>
-        public Task<GetPropertyResponse> Handle(GetPropertyQuery request, CancellationToken cancellationToken)
+        var response = new GetPropertyResponse
         {
-            var response = new GetPropertyResponse
-            {
-                Address = "123 Fake St."
-            };
+            Address = "123 Fake St."
+        };
 
-            return Task.FromResult(response);
-        }
+        return Task.FromResult(response);
     }
 }

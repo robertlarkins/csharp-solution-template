@@ -1,13 +1,12 @@
-﻿namespace Company.Product.Application.Properties.Commands.CreateProperty
+﻿namespace Company.Product.Application.Properties.Commands.CreateProperty;
+
+/// <summary>
+/// The details of the created property.
+/// </summary>
+public class CreatePropertyResponse
 {
     /// <summary>
-    /// The details of the created property.
+    /// Gets or sets the property identifier.
     /// </summary>
-    public class CreatePropertyResponse
-    {
-        /// <summary>
-        /// Gets or sets the property identifier.
-        /// </summary>
-        public int Id { get; set; }
-    }
+    public int Id { get; set; }
 }
